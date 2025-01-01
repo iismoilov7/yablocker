@@ -1,19 +1,18 @@
 {
     "manifest_version": 3,
     "name": "YaBlocker",
-    "version": "1.0",
+    "version": "2.0",
     "description": "Yandex Add Blocker.",
     "permissions": [
-      "activeTab",
-      "webRequest",
-      "webRequestBlocking",
-      "<all_urls>"
+      "activeTab"
     ],
     "content_scripts": [
       {
         "matches": [
           "*://yandex.ru/*",
-          "*://shedevrum.ai/*"
+          "*://ya.ru/*",
+          "*://shedevrum.ai/*",
+          "*://dzen.ru/*"
         ],
         "js": ["content_scripts/content.js"]
       }
